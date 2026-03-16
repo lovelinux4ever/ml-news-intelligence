@@ -1,12 +1,16 @@
-# 🧠 ML News Intelligence Engine (July 2025)
+# 🧠 ML News Intelligence Engine
 
-Motor de extracción y validación semántica de noticias tecnológicas basado en NLP.
+Este repositorio alberga el núcleo de un motor de procesamiento de lenguaje natural (NLP) especializado en la detección y validación semántica de noticias tecnológicas.
 
-## 🚀 Capacidades
-- **Detección en DOM**: Filtra ruido HTML para identificar titulares y fechas.
-- **Búsqueda Vectorial**: Utiliza Similitud de Coseno para matchear noticias con un 77% de precisión.
-- **Eficiencia**: Matriz dispersa (Sparse Matrix) de 3000 dimensiones.
+## ⚖️ Nota sobre el Dataset y Cumplimiento
+Por motivos de **propiedad intelectual y cumplimiento de términos de servicio (TOS)** de las fuentes de origen, el dataset de entrenamiento original no se incluye en este repositorio público. 
 
-## 🛠️ Cómo probar la eficacia
-1. `source .venv/bin/activate`
-2. `python3 demo_engine.py`
+Este proyecto se centra en la exposición de los **artefactos del modelo** y la demostración de la arquitectura de ingeniería de datos subyacente.
+
+## ⚙️ Especificaciones Técnicas
+- **Modelo**: Vectorizador TF-IDF con vocabulario optimizado de 3,000 dimensiones.
+- **Lógica de Match**: Cálculo de Similitud de Coseno para la identificación de entidades en estructuras DOM.
+- **Rendimiento**: Matriz de características comprimida para alta eficiencia en memoria.
+
+## 🚀 Demo de Validación
+El script `demo_engine.py` permite verificar la capacidad del modelo para reconocer titulares específicos dentro de bloques de texto (simulación de scraping), demostrando una precisión de match del **77%**.
